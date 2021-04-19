@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Option.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\StopGame.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity20190411/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

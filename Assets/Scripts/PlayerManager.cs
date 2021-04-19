@@ -14,6 +14,8 @@ public class PlayerManager : MonoBehaviour
     public Text playerScoreText;
     public Text playerLifeValueText;
     public GameObject isDefeatUI;
+    public GameObject stopUI;
+    //public int timeScale = 1;
     public static PlayerManager Instance { get => instance; set => instance = value; }
 
     // Start is called before the first frame update
@@ -41,6 +43,14 @@ public class PlayerManager : MonoBehaviour
         }
         playerScoreText.text = playerScore.ToString();
         playerLifeValueText.text = lifeValue.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+           // timeScale = 0;
+            Time.timeScale = 0;
+            stopUI.SetActive(true);
+
+        }
     }
     public void Recover()
     {
@@ -62,4 +72,5 @@ public class PlayerManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
 }
