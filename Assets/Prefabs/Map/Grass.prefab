@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5488511710424648721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 292381317408593305, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: 529e000d42d32de49bc475716ba7ae37,
+        type: 3}
+    - target: {fileID: 292381317408593305, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518792289478250277, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_Name
+      value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518792289478250277, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869788464612458619, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869788464612458619, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159537532635824493, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: 529e000d42d32de49bc475716ba7ae37,
+        type: 3}
+    - target: {fileID: 7034885897884818385, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_Name
+      value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658513903346956476, guid: bc4fdb0ffbeb748458853637964a731f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7087397245523853442, guid: bc4fdb0ffbeb748458853637964a731f, type: 3}
+    - {fileID: 429598822, guid: bc4fdb0ffbeb748458853637964a731f, type: 3}
+    - {fileID: 5869788464612458619, guid: bc4fdb0ffbeb748458853637964a731f, type: 3}
+    - {fileID: 3925536364829901745, guid: bc4fdb0ffbeb748458853637964a731f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: bc4fdb0ffbeb748458853637964a731f, type: 3}
