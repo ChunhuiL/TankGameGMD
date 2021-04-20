@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - Option
     - Player
     - PlayerManager
+    - StopGame
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -64,9 +65,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12266}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 14348}
+      Script: {instanceID: 14350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -133,13 +134,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 13628}
+      Script: {instanceID: 13562}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 13630}
     - Class: 114
-      Script: {instanceID: 13918}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 14348}
+      Script: {instanceID: 13920}
+    - Class: 114
+      Script: {instanceID: 14350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -149,6 +152,45 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Stop.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11598}
+    - Class: 114
+      Script: {instanceID: 12266}
+    - Class: 114
+      Script: {instanceID: 13562}
+    - Class: 114
+      Script: {instanceID: 13738}
+    - Class: 114
+      Script: {instanceID: 14350}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -347,7 +389,7 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
-      Hash: 0feed96ddaf0592720635e0acfe066e5
+      Hash: b1b4ac79bdadd71d926ab3e6d2ee1c57
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -359,7 +401,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 324905bb7d1d6a316c8c80bce638a81d
+      Hash: 924d2a60c169b34ade8bf551a5bc2523
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Option
@@ -551,6 +593,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: f7263e4eb135064a7aa12a0d71b07ab9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StopGame
+  - hash:
+      serializedVersion: 2
       Hash: 093e9a1949422a54b24f92be7c9c50e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -697,4 +745,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Desktop/GMD/GMDProject/01
+  - Assets/Scenes/Stop.unity
+  playerPath: E:/Desktop/GMD/GMDProject
