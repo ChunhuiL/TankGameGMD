@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StopGame : MonoBehaviour
 {
+    [HideInInspector]
     private int choice = 0;
     public Transform posOne;
     public Transform posTwo;

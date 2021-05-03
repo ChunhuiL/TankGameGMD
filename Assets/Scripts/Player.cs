@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [HideInInspector]
     public float moveSpeed = 3;
     private SpriteRenderer sr;
     public Sprite[] tankSprite;//up right down left    
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject explosionPrefab;
     public GameObject defendEffectPrefab;
+    [HideInInspector]
     private float defendTimeVal = 3;
     public bool isDefended = true;
     //public AudioSource moveAudio;

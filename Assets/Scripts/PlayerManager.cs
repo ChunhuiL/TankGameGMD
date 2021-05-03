@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PlayerManager : MonoBehaviour
 {
+    [HideInInspector]
     public int lifeValue = 3;
+    [HideInInspector]
     public int playerScore = 0;
     public bool isDead;
     public bool isDefeat;

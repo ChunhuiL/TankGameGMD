@@ -14,7 +14,6 @@ public class Map : MonoBehaviour
     private void InitMap()
         {
             CreateItem(item[0], new Vector3(0, -8, 0), Quaternion.identity);
-
             CreateItem(item[1], new Vector3(-1, -8, 0), Quaternion.identity);
             CreateItem(item[1], new Vector3(1, -8, 0), Quaternion.identity);
             for (int i = -1; i < 2; i++)

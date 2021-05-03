@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [HideInInspector]
     public float moveSpeed = 10;
     public bool isPlayerBullet;
     //public AudioClip hitAudio;

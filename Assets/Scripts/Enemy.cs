@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [HideInInspector]
     public float moveSpeed = 3;
     private SpriteRenderer sr;
     public Sprite[] tankSprite;//up right down left    

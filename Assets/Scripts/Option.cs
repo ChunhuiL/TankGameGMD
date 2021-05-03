@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Option : MonoBehaviour
 {
+    [HideInInspector]
     private int choice = 0;
     public Transform posOne;
     public Transform posTwo;
