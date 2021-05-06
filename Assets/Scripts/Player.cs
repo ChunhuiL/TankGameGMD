@@ -18,14 +18,16 @@ public class Player : MonoBehaviour
     public bool isDefended = true;
     //public AudioSource moveAudio;
     //public AudioClip[] tankAudio;
-
+    delegate void Delegate();
+    Delegate move;
     public void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
     }
     void Start()
     {
-        
+        move = Move;
+        move();
     }
     
     void Update()
@@ -51,7 +53,8 @@ public class Player : MonoBehaviour
         Move(); 
         if (timeVal>=0.4f)
         {
-            Attack();
+            //Attack();
+            StartCoroutine(Attack());
         }
         else
         {
@@ -114,13 +117,14 @@ public class Player : MonoBehaviour
         //    }
         //}
     }
-    private void Attack()
+    IEnumerator Attack()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, transform.position,Quaternion.Euler(transform.eulerAngles+bulletEulerAngles));
             timeVal = 0;
         }
+        yield return null;
     }
     private void Die()
     {
