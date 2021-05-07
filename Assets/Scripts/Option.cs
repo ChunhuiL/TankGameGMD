@@ -40,7 +40,7 @@ public class Option : MonoBehaviour
         }
         if (choice == 2 && Input.GetKeyDown(KeyCode.Escape))
         {
-                aboutUI.SetActive(false);
+            aboutUI.SetActive(false);
         }
     }
 }

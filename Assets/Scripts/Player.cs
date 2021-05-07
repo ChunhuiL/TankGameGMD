@@ -16,8 +16,8 @@ public class Player : MonoBehaviour
     [HideInInspector]
     private float defendTimeVal = 3;
     public bool isDefended = true;
-    //public AudioSource moveAudio;
-    //public AudioClip[] tankAudio;
+    public AudioSource moveAudio;
+    public AudioClip[] tankAudio;
     delegate void Delegate();
     Delegate move;
     public void Awake()
@@ -78,15 +78,15 @@ public class Player : MonoBehaviour
             sr.sprite = tankSprite[0];
             bulletEulerAngles = new Vector3(0, 0, 0);
         }
-       //if (Mathf.Abs(v)>0.05f)
-       // {
-       //     moveAudio.clip = tankAudio[1];
-       //     if (!moveAudio.isPlaying)
-       //     {
-       //         moveAudio.Play();
-       //     }
-       // }
-       //if v h same time ,v first
+        if (Mathf.Abs(v) > 0.05f)
+        {
+            moveAudio.clip = tankAudio[1];
+            if (!moveAudio.isPlaying)
+            {
+                moveAudio.Play();
+            }
+        }
+        //if v h same time ,v first
         if (v != 0)
         {
             return;
@@ -104,22 +104,22 @@ public class Player : MonoBehaviour
             sr.sprite = tankSprite[1];
             bulletEulerAngles = new Vector3(0, 0, -90);
         }
-        //if (Mathf.Abs(h) > 0.05f)
-        //{
-        //    moveAudio.clip = tankAudio[1];
-        //    if (!moveAudio.isPlaying)
-        //    {
-        //        moveAudio.Play();
-        //    }
-        //}
-        //else
-        //{
-        //    moveAudio.clip = tankAudio[0];
-        //    if (!moveAudio.isPlaying)
-        //    {
-        //        moveAudio.Play();
-        //    }
-        //}
+        if (Mathf.Abs(h) > 0.05f)
+        {
+            moveAudio.clip = tankAudio[1];
+            if (!moveAudio.isPlaying)
+            {
+                moveAudio.Play();
+            }
+        }
+        else
+        {
+            moveAudio.clip = tankAudio[0];
+            if (!moveAudio.isPlaying)
+            {
+                moveAudio.Play();
+            }
+        }
     }
     IEnumerator Attack()
     {

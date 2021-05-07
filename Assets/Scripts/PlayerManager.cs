@@ -56,7 +56,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void Recover()
     {
-        if (lifeValue ==1)
+        if (lifeValue <=1)
         {
             lifeValue--;
             isDefeat = true;
