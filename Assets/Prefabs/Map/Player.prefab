@@ -135,6 +135,8 @@ MonoBehaviour:
     type: 3}
   defendEffectPrefab: {fileID: 9144723995038765526}
   isDefended: 1
+  moveAudio: {fileID: 0}
+  tankAudio: []
 --- !u!50 &429598822
 Rigidbody2D:
   serializedVersion: 4

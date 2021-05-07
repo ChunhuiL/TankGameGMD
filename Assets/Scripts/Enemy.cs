@@ -77,7 +77,7 @@ public class Enemy : MonoBehaviour
                 timeValChangeDirection += Time.fixedDeltaTime;
             }
 
-        transform.Translate(Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.up * v * moveSpeed * Time.fixedDeltaTime, Space.World);
         if (v < 0)
         {
             sr.sprite = tankSprite[2];
@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        transform.Translate(Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.right * h * moveSpeed * Time.fixedDeltaTime, Space.World);
         if (h < 0)
         {
             sr.sprite = tankSprite[3];
@@ -111,7 +111,7 @@ public class Enemy : MonoBehaviour
         timeVal = 0;
         yield return null;
     }
-    private void Die()
+    public void Die()
     {
         PlayerManager.Instance.playerScore++;
         Instantiate(explosionPrefab, transform.position, transform.rotation);

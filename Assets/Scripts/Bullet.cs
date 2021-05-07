@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
                 }      
                 break;
             case "Heart":
-               collision.SendMessage("Die");
+                collision.SendMessage("Die");
                 Destroy(gameObject);
                 break;
             case "Enemy":

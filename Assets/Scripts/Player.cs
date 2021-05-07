@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
         }
       
     }
+    //Avoid shaking in FixedUpdate
     void FixedUpdate()
     {
         if (PlayerManager.Instance.isDefeat)
@@ -64,8 +65,9 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
+        //v (-1,1)
         float v = Input.GetAxisRaw("Vertical");
-        transform.Translate(Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.up * v * moveSpeed * Time.fixedDeltaTime, Space.World);
         if (v < 0)
         {
             sr.sprite = tankSprite[2];
@@ -84,12 +86,14 @@ public class Player : MonoBehaviour
        //         moveAudio.Play();
        //     }
        // }
+       //if v h same time ,v first
         if (v != 0)
         {
             return;
         }
+        //h (-1,1)
         float h = Input.GetAxisRaw("Horizontal");
-        transform.Translate(Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.right * h * moveSpeed * Time.fixedDeltaTime, Space.World);
         if (h < 0)
         {
             sr.sprite = tankSprite[3];
@@ -126,7 +130,7 @@ public class Player : MonoBehaviour
         }
         yield return null;
     }
-    private void Die()
+    public void Die()
     {
         if (isDefended)
         {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Map : MonoBehaviour
 {
     public GameObject[] item;
+    //0.home 1.wall 2.barrier 3.born 4.water 5.grass 6.air wall
     private List<Vector3> itemPositionList = new List<Vector3>();
     private void Awake()
     {
@@ -52,6 +53,7 @@ public class Map : MonoBehaviour
     {
         GameObject itemGo = Instantiate(createGameObject, createPosition, createRotation);
         itemGo.transform.SetParent(gameObject.transform);
+        //have things
         itemPositionList.Add(createPosition);
     }
     private Vector3 CreateRandomPosition()

@@ -98,7 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   isPlayerBullet: 1
-  hitAudio: {fileID: 0}
 --- !u!61 &-870816974569121778
 BoxCollider2D:
   m_ObjectHideFlags: 0
