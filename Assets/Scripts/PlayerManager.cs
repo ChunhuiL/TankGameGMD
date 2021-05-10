@@ -60,7 +60,7 @@ public class PlayerManager : MonoBehaviour
         {
             lifeValue--;
             isDefeat = true;
-            Invoke("ReturnToMenu", 3);
+            Invoke("ReturnToMenu",2);
         }
         else
         {

@@ -159,6 +159,7 @@ MonoBehaviour:
   playerLifeValueText: {fileID: 1298424481}
   isDefeatUI: {fileID: 2136629403}
   stopUI: {fileID: 533010850}
+  brokenSprite: {fileID: 21300000, guid: 254c67df951808c4e8d95fce9cccdf71, type: 3}
 --- !u!4 &105831667
 Transform:
   m_ObjectHideFlags: 0
