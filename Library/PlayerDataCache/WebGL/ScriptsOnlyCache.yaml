@@ -746,4 +746,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Stop.unity
-  playerPath: E:/Desktop/GMD/GMDProject
+  playerPath: "E:/Desktop/GMD/\u65B0\u5EFA\u6587\u4EF6\u5939"
